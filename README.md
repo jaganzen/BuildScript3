@@ -41,7 +41,7 @@ while true; do
         7) Disk_Information=$(df -H)
            echo "HardDisk information is: $Disk_Information"
            ;;
-        8) CPU_Information=$(cat /proc/cpuinfo)
+        8) CPU_Information=$(cat /cpuinfo)
            echo "CPU info is: $CPU_Information"
            ;;
         9) Memory_Used=$(free -m)
@@ -57,3 +57,5 @@ while true; do
            ;;
     esac
 done
+
+# note - 3, 8, and 10 do not run properly
